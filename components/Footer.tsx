@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                         <a href="#" className="text-2xl font-bold text-white">
                             ELITE <span className="text-brand-primary">AGENCY</span>
                         </a>
-                        <p className="text-dark-subtle mt-2">Architectes du futur de la tech africaine, une startup à la fois.</p>
+                        <p className="text-dark-subtle mt-2">Architecte du futur de la tech africaine, une startup à la fois.</p>
                     </div>
                     <div className="mt-6 md:mt-0">
                         <div className="flex justify-center md:justify-end space-x-4">
