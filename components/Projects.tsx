@@ -91,6 +91,22 @@ const projectsData: Project[] = [
     tags: ["E-tickets", "QR Code", "Événementiel"],
     icon: <VideoIcon />,
   },
+  {
+    title: "Paycash",
+    description: "Application de récompense mobile pour les particuliers",
+    videoUrl: null,
+    thumbnailUrl: "/thumbnails/bfclogo.png",
+    tags: ["Paiement", "Mobile", "FinTech"],
+    icon: <SearchIcon />,
+  },
+  {
+    title: "ReportCo",
+    description: "Le système de reporting tout en un, clé en main pour suivre toute vos performances en temps réel.",
+    videoUrl: null,
+    thumbnailUrl: "/thumbnails/reportco.png",
+    tags: ["Reporting", "Performance", "Suivi"],
+    icon: <SearchIcon />,
+  }
 ];
 
 const ProjectCard: React.FC<{

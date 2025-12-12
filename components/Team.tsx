@@ -1,18 +1,19 @@
 import React from "react";
 
 const emmersonImageUrl = "/images/emmerson.jpeg";
-const amosImageUrl = "/images/amos.jpeg";
+const amosImageUrl = "/images/geneprofil.jpg";
 
 const TeamMemberCard: React.FC<{
   name: string;
   role: string;
   description: string;
   imageUrl: string;
-}> = ({ name, role, description, imageUrl }) => {
+  imgClassname: string;
+}> = ({ name, role, description, imageUrl, imgClassname }) => {
   return (
     <div className="bg-dark-card rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-brand-primary/20">
       <img
-        className="w-full h-80 object-cover object-top"
+        className={`w-full h-80 object-cover ${imgClassname}`}
         src={imageUrl}
         alt={name}
       />
@@ -45,12 +46,14 @@ const Team: React.FC = () => {
             role="L'Architecte & Visionnaire"
             description="À 19 ans, Emmerson est étudiant en génie logiciel et entrepreneur avec un don inné pour voir 'le prochain niveau'. Ancien copywriter et chef de projet aguerri, il élabore la stratégie et l'architecture de la transformation de chaque client."
             imageUrl={emmersonImageUrl}
+            imgClassname="object-top"
           />
           <TeamMemberCard
             name="Amos K. Sivitra"
             role="Le Bâtisseur & Développeur Senior"
             description="Avec plus de 7 ans d'expérience passionnée en tant qu'autodidacte et universitaire, Amos est un expert full-stack. Il traduit les visions complexes en code robuste, évolutif et élégant, dirigeant l'exécution technique de tous nos projets."
             imageUrl={amosImageUrl}
+            imgClassname="object-center"
           />
         </div>
       </div>
